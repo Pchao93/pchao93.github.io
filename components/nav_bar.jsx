@@ -9,6 +9,9 @@ export default (props) => {
 
         <ul className="nav-buttons">
           <li className="nav-button">
+            <a href="./">About</a>
+          </li>
+          <li className="nav-button">
             <a href="./resume">Resume</a>
           </li>
           <li className="nav-button">
@@ -19,6 +22,9 @@ export default (props) => {
           </li>
           <li className="nav-button">
             <a href="https://linkedin.com/in/patrick-chao-560a0566/"><i className="fab fa-linkedin"></i></a>
+          </li>
+          <li className="nav-button">
+            <a href="./contact">Contact</a>
           </li>
         </ul>
     </nav>
