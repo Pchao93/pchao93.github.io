@@ -4,13 +4,11 @@ export default (props) => {
   return (<nav className="nav-bar-container">
       <a href="/">
         <div id="logo">
+          Patrick Chao
         </div>
       </a>
 
         <ul className="nav-buttons">
-          <li className="nav-button">
-            <a href="./">About</a>
-          </li>
           <li className="nav-button">
             <a href="./resume">Resume</a>
           </li>

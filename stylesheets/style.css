@@ -1,3 +1,13 @@
+html {
+  background: #faf9fa;
+  height: 100%;
+}
+.app-container {
+  height: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+
+}
+
 .nav-bar-container {
   width: 100%;
   position: fixed;
@@ -6,7 +16,19 @@
   right: 0px;
   height: 50px;
   /* color: #fff; */
-  background: #000;
+  background: #010101;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  /* background: #36454f; */
+}
+
+#logo {
+  font-size: 36px;
+  color: #faf9fa;
+  margin-left: 5vw;
+
 }
 
 .nav-buttons {
@@ -15,8 +37,102 @@
   height: 50px;
   justify-content: space-around;
   align-items: center;
+  margin-right: 5vw;
+
 }
 .nav-button a {
-  color: #fff;
+  color: #faf9fa;
   font-size: 24px;
+  height: 50px;
+}
+
+.nav-button:hover {
+  background: #36454f;
+
+}
+.nav-button {
+  padding: 10px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.main-page-container {
+  margin-top: 50px;
+  height: 100%;
+}
+
+.main-page-banner {
+  position: relative;
+
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+
+}
+
+.banner-text {
+  position: absolute;
+  margin: auto;
+  font-size: 8vw;
+  width: 60vw;
+  height: 10vw;
+  top: 0px;
+  /* top: calc(50% - 5vw); */
+  left: calc(50% - 30vw);
+  text-align: center;
+  color: #faf9fa;
+}
+
+.profile-image {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background: black;
+  position: absolute;
+  top: -8vw;
+  left: 50px;
+  overflow: hidden;
+}
+
+.actual-content {
+
+  height: 100%;
+  width: 100%;
+
+  background: #fff;
+  font-size: 1.65vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: flex-end; */
+}
+
+.about-me-header {
+  font-size: 3vw;
+  font-weight: 900;
+  /* position: absolute; */
+  /* top: -5vw; */
+  margin-left: calc(17vw + 100px);
+  /* border-bottom: 1px solid #000;
+  width: calc(100% - 17vw - 150px);
+  margin-bottom: 10px;  */
+
+}
+
+.about-me {
+  margin-left: calc(17vw + 50px);
+  padding: 50px;
+  padding-top: 0px;
+}
+
+.stats-box {
+
 }
