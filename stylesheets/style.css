@@ -12,6 +12,9 @@
 .nav-buttons {
   display: flex;
   width: 30vw;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
 }
 .nav-button a {
   color: #fff;
