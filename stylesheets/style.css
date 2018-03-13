@@ -117,13 +117,16 @@ html {
 
 .about-me-header {
   font-size: 3vw;
-  font-weight: 900;
+  font-weight: 700;
   /* position: absolute; */
   /* top: -5vw; */
   margin-left: calc(17vw + 100px);
   /* border-bottom: 1px solid #000;
-  width: calc(100% - 17vw - 150px);
-  margin-bottom: 10px;  */
+  width: calc(100% - 17vw - 150px); */
+  margin-bottom: 1vw;
+  margin-top: 2vw;
+  font-family: "Raleway", sans-serif;
+
 
 }
 
@@ -131,8 +134,112 @@ html {
   margin-left: calc(17vw + 50px);
   padding: 50px;
   padding-top: 0px;
+  font-weight: 300;
+
+  font-family: "Open Sans", sans-serif;
 }
 
-.stats-box {
+.about-me-details {
+  position: absolute;
+  top: calc(8vw + 20px);
+  font-size: 1.5vw;
+  padding: 20px;
+  margin-left: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  width: 18vw;
+}
+
+.about-me-details div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+
+}
+
+.about-me-details div:last-of-type {
+  margin-bottom: 0px;
+}
+
+
+.technologies-header {
+  font-size: 3vw;
+  font-weight: 700;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1vw;
+  margin-bottom: 2vw;
+}
+
+.languages-header {
+  font-size: 3vw;
+  font-weight: 700;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 3vw;
+
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3vw;
+
+}
+
+.languages i {
+
+
+
+
+  font-size: 8vw;
+  margin-bottom: 1vw;
+}
+
+
+.languages i:hover {
+
+    /* color: #36454f; */
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.language span {
+  font-size: 2vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.frameworks-header {
+  font-size: 3vw;
+  font-weight: 700;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 2vw;
+}
+
+.portfolio-header {
+  font-size: 3vw;
+  font-weight: 700;
+  text-align: center;
+  width: 90%;
+  margin: 3vw auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1vw;
 
 }

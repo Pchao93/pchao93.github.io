@@ -23517,12 +23517,7 @@ exports.default = function (props) {
       'header',
       { className: 'main-page-banner' },
       _react2.default.createElement('img', { className: 'banner', src: 'https://s.hdnux.com/photos/55/61/72/12000916/7/1024x1024.jpg' }),
-      _react2.default.createElement('div', { className: 'banner-overlay' }),
-      _react2.default.createElement(
-        'div',
-        { className: 'banner-text' },
-        'WELCOME TO MY SITE'
-      )
+      _react2.default.createElement('div', { className: 'banner-overlay' })
     ),
     _react2.default.createElement(
       'div',
@@ -23540,7 +23535,53 @@ exports.default = function (props) {
       _react2.default.createElement(
         'div',
         { className: 'about-me' },
-        'Computer hardware has been a lifelong passion of mine, ever since I put together my first computer with my father at the age of 7. However, it wasn\'t until I took the introductory computer science courses at Cal that I discovered a passion for the software side of things. After several years in the legal industry after college, I decided to change careers and chase my dream of fulltime software development. Today, I work in a variety of languages and frameworks to produce fully featured web applications as a fullstack web developer.'
+        'Computer hardware has been a lifelong passion of mine, ever since I was putting together my first computers with my dad. However, it wasn\'t until I took the introductory computer science courses at Cal that I discovered a passion for the software side of things. After several years in the legal industry after college, I decided to change careers and chase my dream of fulltime software development. Today, I work in a variety of languages and frameworks to produce fully featured web applications as a fullstack web developer.'
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'about-me-details' },
+        _react2.default.createElement(
+          'div',
+          { className: 'education' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Education: '
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Econ @ U.C. Berkeley'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'location' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Location: '
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            'SF Bay Area'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'work-authorization' },
+          _react2.default.createElement(
+            'span',
+            null,
+            'Status: '
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            'U.S. Citizen'
+          )
+        )
       ),
       _react2.default.createElement(
         'div',
@@ -23549,8 +23590,233 @@ exports.default = function (props) {
       ),
       _react2.default.createElement(
         'div',
+        { className: 'languages-header' },
+        'Languages'
+      ),
+      _react2.default.createElement(
+        'ul',
+        { className: 'languages' },
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-ruby-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Ruby'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-javascript-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'JavaScript'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-python-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Python'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-go-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Go'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-java-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Java'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'ul',
+        {
+
+          className: 'languages' },
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-html5-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'HTML'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-css3-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'CSS'
+          )
+        ),
+        _react2.default.createElement('li', { style: { width: "8vw" } }),
+        _react2.default.createElement('li', { style: { width: "8vw" } }),
+        _react2.default.createElement('li', { style: { width: "8vw" } })
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'frameworks-header' },
+        'Frameworks/Technologies'
+      ),
+      _react2.default.createElement(
+        'ul',
+        { className: 'languages' },
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { 'class': 'devicon-rails-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Rails'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-react-original colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'React'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-amazonwebservices-original colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'AWS'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-git-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Git'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-postgresql-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'PostgreSQL'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'ul',
+        { className: 'languages' },
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', {
+
+            className: 'devicon-express-original colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Express.js'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-nodejs-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Node.js'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-redis-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Redis'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-docker-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Docker'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'language' },
+          _react2.default.createElement('i', { className: 'devicon-jquery-plain colored' }),
+          _react2.default.createElement(
+            'span',
+            null,
+            'jQuery'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
         { className: 'portfolio-header' },
         'Portfolio'
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'portfolio-container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio-item' },
+          _react2.default.createElement('div', { className: 'item-image' }),
+          _react2.default.createElement('div', { className: 'item-description' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio-item' },
+          _react2.default.createElement('div', { className: 'item-description' }),
+          _react2.default.createElement('div', { className: 'item-image' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio-item' },
+          _react2.default.createElement('div', { className: 'item-image' }),
+          _react2.default.createElement('div', { className: 'item-description' })
+        )
       ),
       _react2.default.createElement(
         'div',
