@@ -3,11 +3,11 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 export default (props) => {
   return (<nav className="nav-bar-container">
-      <a href="#">
+      <Link smooth to="#top">
         <div id="logo">
           Patrick Chao
         </div>
-      </a>
+      </Link>
 
         <ul className="nav-buttons">
           <li className="nav-button">

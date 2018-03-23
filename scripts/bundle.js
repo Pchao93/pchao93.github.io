@@ -23434,8 +23434,8 @@ exports.default = function (props) {
     'nav',
     { className: 'nav-bar-container' },
     _react2.default.createElement(
-      'a',
-      { href: '#' },
+      _reactRouterHashLink.HashLink,
+      { smooth: true, to: '#top' },
       _react2.default.createElement(
         'div',
         { id: 'logo' },
@@ -23513,299 +23513,347 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = function (props) {
   return _react2.default.createElement(
-    'div',
-    { className: 'main-page-container' },
+    "div",
+    { className: "main-page-container" },
     _react2.default.createElement(
-      'header',
-      { className: 'main-page-banner' },
-      _react2.default.createElement('img', { className: 'banner', src: 'https://s.hdnux.com/photos/55/61/72/12000916/7/1024x1024.jpg' }),
-      _react2.default.createElement('div', { className: 'banner-overlay' })
+      "header",
+      { id: "top", className: "main-page-banner" },
+      _react2.default.createElement("img", { className: "banner", src: "https://s.hdnux.com/photos/55/61/72/12000916/7/1024x1024.jpg" }),
+      _react2.default.createElement("div", { className: "banner-overlay" })
     ),
     _react2.default.createElement(
-      'div',
-      { className: 'actual-content' },
+      "div",
+      { className: "actual-content" },
       _react2.default.createElement(
-        'div',
-        { className: 'profile-image' },
-        _react2.default.createElement('img', { src: 'https://media.licdn.com/dms/image/C5603AQFj_LB-8QHE2g/profile-displayphoto-shrink_200_200/0?e=1526079600&v=alpha&t=WUIl0-cKlE3MHo1wicrHQNAb_v-oY_JgNYk8NCdG_fs' })
+        "div",
+        { className: "profile-image" },
+        _react2.default.createElement("img", { src: "https://media.licdn.com/dms/image/C5603AQFj_LB-8QHE2g/profile-displayphoto-shrink_200_200/0?e=1526079600&v=alpha&t=WUIl0-cKlE3MHo1wicrHQNAb_v-oY_JgNYk8NCdG_fs" })
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'about-me-header' },
-        'Patrick Chao - Software Developer'
+        "div",
+        { className: "about-me-header" },
+        "Patrick Chao - Software Developer"
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'about-me' },
-        'Computer hardware has been a lifelong passion of mine, ever since I was putting together my first computers with my dad. However, it wasn\'t until I took the introductory computer science courses at Cal that I discovered a passion for the software side of things. After several years in the legal industry after college, I decided to change careers and chase my dream of fulltime software development. Today, I work in a variety of languages and frameworks to produce fully featured web applications as a fullstack web developer.'
+        "div",
+        { className: "about-me" },
+        "Computer's have been a lifelong passion of mine, ever since I was putting together my first PCs with my dad. However, it wasn't until I took the introductory computer science courses at Cal that I discovered a passion for the software side of things. After several years in the legal industry after college, I decided to change careers and chase my dream of fulltime software development. Today, I work in a variety of languages and frameworks to produce fully featured web applications as a fullstack web developer."
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'about-me-details' },
+        "div",
+        { className: "about-me-details" },
         _react2.default.createElement(
-          'div',
-          { className: 'education' },
+          "div",
+          { className: "education" },
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Education: '
+            "Education: "
           ),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'U.C. Berkeley'
+            "U.C. Berkeley"
           )
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'location' },
+          "div",
+          { className: "location" },
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Location: '
+            "Location: "
           ),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'SF Bay Area'
+            "SF Bay Area"
           )
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'work-authorization' },
+          "div",
+          { className: "work-authorization" },
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Status: '
+            "Status: "
           ),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'U.S. Citizen'
+            "U.S. Citizen"
           )
         )
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'technologies-header' },
-        'Technologies'
+        "div",
+        { className: "technologies-header" },
+        "Technologies"
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'languages-header' },
-        'Languages'
+        "div",
+        { className: "languages-header" },
+        "Languages"
       ),
       _react2.default.createElement(
-        'ul',
-        { className: 'languages' },
+        "ul",
+        { className: "languages" },
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-ruby-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-ruby-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Ruby'
+            "Ruby"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-javascript-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-javascript-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'JavaScript'
+            "JavaScript"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-python-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-python-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Python'
+            "Python"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-go-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-go-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Go'
+            "Go"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-html5-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-html5-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'HTML'
+            "HTML"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-css3-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-css3-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'CSS'
+            "CSS"
           )
         )
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'frameworks-header' },
-        'Frameworks/Technologies'
+        "div",
+        { className: "frameworks-header" },
+        "Frameworks/Technologies"
       ),
       _react2.default.createElement(
-        'ul',
-        { className: 'languages' },
+        "ul",
+        { className: "languages" },
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-rails-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-rails-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Rails'
+            "Rails"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-react-original colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-react-original colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'React'
+            "React"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-amazonwebservices-original colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-amazonwebservices-original colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'AWS'
+            "AWS"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-git-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-git-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Git'
+            "Git"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-postgresql-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-postgresql-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'PostgreSQL'
+            "PostgreSQL"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', {
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", {
 
-            className: 'devicon-express-original colored' }),
+            className: "devicon-express-original colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Express.js'
+            "Express.js"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-nodejs-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-nodejs-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Node.js'
+            "Node.js"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-redis-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-redis-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Redis'
+            "Redis"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-docker-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-docker-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'Docker'
+            "Docker"
           )
         ),
         _react2.default.createElement(
-          'li',
-          { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-jquery-plain colored' }),
+          "li",
+          { className: "language" },
+          _react2.default.createElement("i", { className: "devicon-jquery-plain colored" }),
           _react2.default.createElement(
-            'span',
+            "span",
             null,
-            'jQuery'
+            "jQuery"
           )
         )
       ),
       _react2.default.createElement(
-        'div',
-        { id: 'projects', className: 'portfolio-header' },
-        'Projects'
+        "div",
+        { className: "portfolio-header" },
+        "Projects"
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'portfolio-container' },
+        "div",
+        { className: "portfolio-container" },
         _react2.default.createElement(
-          'div',
-          { className: 'portfolio-item' },
-          _react2.default.createElement('div', { className: 'item-image' }),
-          _react2.default.createElement('div', { className: 'item-description' })
+          "div",
+          { className: "portfolio-item" },
+          _react2.default.createElement(
+            "div",
+            { className: "item-description goodplays", id: "projects" },
+            _react2.default.createElement("img", { src: "https://s3-us-west-1.amazonaws.com/experience.images/goodPlays+logo.png", className: "project-header goodplays" }),
+            _react2.default.createElement(
+              "span",
+              null,
+              "Goodreads for video games, a responsively designed single page application built on React/Redux and Rails."
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "project-links" },
+              _react2.default.createElement(
+                "a",
+                { href: "https://www.goodplays.gg" },
+                "Live"
+              ),
+              _react2.default.createElement(
+                "a",
+                { href: "https://github.com/Pchao93/goodPlays" },
+                "Code"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "item-image" },
+            _react2.default.createElement("img", { src: "https://i.imgur.com/z4dX3Um.jpg" })
+          )
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'portfolio-item' },
-          _react2.default.createElement('div', { className: 'item-description' }),
-          _react2.default.createElement('div', { className: 'item-image' })
+          "div",
+          { className: "portfolio-item" },
+          _react2.default.createElement(
+            "div",
+            { className: "item-image" },
+            _react2.default.createElement("img", { src: "https://i.imgur.com/tQwKFn3.jpg" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "item-description xperience" },
+            _react2.default.createElement("img", { src: "https://i.imgur.com/VIl7mJ8.png", className: "project-header xperience" }),
+            _react2.default.createElement(
+              "span",
+              null,
+              "NBA play-by-play recap app built on vanilla JavaScript client and Express.js backend."
+            )
+          )
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'portfolio-item' },
-          _react2.default.createElement('div', { className: 'item-image' }),
-          _react2.default.createElement('div', { className: 'item-description' })
+          "div",
+          { className: "portfolio-item" },
+          _react2.default.createElement(
+            "div",
+            { className: "item-description prettypbp" },
+            _react2.default.createElement("img", { src: "https://s3-us-west-1.amazonaws.com/experience.images/PrettyPbP-logo-white.png", className: "project-header prettypbp" }),
+            _react2.default.createElement(
+              "span",
+              null,
+              "Yelp for experiences - find date ideas, trip plans, and more! Built on React/Redux and Go, deployed with Docker."
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "item-image" },
+            _react2.default.createElement("img", { src: "https://i.imgur.com/mVwvPLT.jpg" })
+          )
         )
       ),
       _react2.default.createElement(
-        'div',
-        { className: 'resume-header' },
-        'Resume'
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'contact-header' },
-        'Contact'
+        "div",
+        { className: "contact-header" },
+        "Contact"
       )
     )
   );

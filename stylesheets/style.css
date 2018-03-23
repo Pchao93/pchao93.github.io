@@ -346,9 +346,80 @@ html {
 
 
 .portfolio-container {
+
+}
+
+.portfolio-item {
+  display: flex;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+
+
+.project-header {
+  width: 200px;
+}
+
+.item-description {
+  padding: 20px;
+
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.item-description.goodplays {
+  background: #4b367c;
+
+
+}
+
+.item-description.goodplays span {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.item-description.goodplays img {
+  margin-left: -15px;
+}
+
+.item-description.xperience {
+  background: #25282A;
+}
+
+.item-description.xperience span {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.item-description.xperience img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.item-description.prettypbp {
+  background: #243E90;
+}
+
+.item-description.prettypbp span {
+  color: #FFCD34;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
   
 }
 
+.item-description.prettypbp img {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: -20px;
+}
+
+.item-image {
+  width: 50%;
+}
 @media screen and (max-width: 650px) {
   .portfolio-header {
     font-size: 30px;

@@ -3,7 +3,7 @@ import React from 'react';
 export default (props) => {
   return (
     <div className="main-page-container">
-      <header className='main-page-banner'>
+      <header id="top" className='main-page-banner'>
         <img className='banner' src="https://s.hdnux.com/photos/55/61/72/12000916/7/1024x1024.jpg"></img>
         <div className='banner-overlay'></div>
 
@@ -15,7 +15,7 @@ export default (props) => {
         <div className='about-me-header'>Patrick Chao - Software Developer</div>
 
         <div className="about-me">
-          Computer hardware has been a lifelong passion of mine, ever since I was putting together my first computers with my dad.
+          Computer's have been a lifelong passion of mine, ever since I was putting together my first PCs with my dad.
           However, it wasn't until I took the introductory computer science courses at Cal that I discovered a passion for the software side of things.
           After several years in the legal industry after college, I decided to change careers and chase my dream of fulltime software development.
           Today, I work in a variety of languages and frameworks to produce fully featured web applications as a fullstack web developer.
@@ -103,23 +103,48 @@ export default (props) => {
                 <span>jQuery</span>
               </li>
             </ul>
-        <div id="projects" className='portfolio-header'>Projects</div>
+        <div className='portfolio-header'>Projects</div>
         <div className='portfolio-container'>
           <div className="portfolio-item">
-            <div className='item-image'></div>
-            <div className='item-description'></div>
+
+            <div className='item-description goodplays' id="projects" >
+              <img src="https://s3-us-west-1.amazonaws.com/experience.images/goodPlays+logo.png" className="project-header goodplays">
+
+              </img>
+              <span>Goodreads for video games, a responsively designed single page application built on React/Redux and Rails.</span>
+              <div className="project-links">
+                <a href="https://www.goodplays.gg">Live</a>
+                <a href="https://github.com/Pchao93/goodPlays">Code</a>
+              </div>
+            </div>
+            <div className='item-image'>
+              <img src="https://i.imgur.com/z4dX3Um.jpg">
+
+              </img>
+            </div>
+          </div>
+          <div className="portfolio-item" >
+            <div className='item-image'>
+              <img src="https://i.imgur.com/tQwKFn3.jpg"></img>
+            </div>
+            <div className='item-description xperience'>
+              <img src="https://i.imgur.com/VIl7mJ8.png" className="project-header xperience"></img>
+              <span>NBA play-by-play recap app built on vanilla JavaScript client and Express.js backend.</span>
+            </div>
+
           </div>
           <div className="portfolio-item">
-            <div className='item-description'></div>
-            <div className='item-image'></div>
-          </div>
-          <div className="portfolio-item">
-            <div className='item-image'></div>
-            <div className='item-description'></div>
+            <div className='item-description prettypbp'>
+              <img src="https://s3-us-west-1.amazonaws.com/experience.images/PrettyPbP-logo-white.png" className="project-header prettypbp"></img>
+              <span>Yelp for experiences - find date ideas, trip plans, and more! Built on React/Redux and Go, deployed with Docker.</span>
+            </div>
+            <div className='item-image'>
+              <img src="https://i.imgur.com/mVwvPLT.jpg"></img>
+            </div>
+
           </div>
 
         </div>
-        <div className='resume-header'>Resume</div>
         <div className='contact-header'>Contact</div>
 
 
