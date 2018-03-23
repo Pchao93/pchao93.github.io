@@ -23405,7 +23405,7 @@ exports.default = function (props) {
     _react2.default.createElement(
       _reactRouterDom.Switch,
       null,
-      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _main_page2.default })
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _main_page2.default })
     )
   );
 };
@@ -23425,67 +23425,69 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterHashLink = __webpack_require__(79);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (props) {
   return _react2.default.createElement(
-    "nav",
-    { className: "nav-bar-container" },
+    'nav',
+    { className: 'nav-bar-container' },
     _react2.default.createElement(
-      "a",
-      { href: "/" },
+      'a',
+      { href: '#' },
       _react2.default.createElement(
-        "div",
-        { id: "logo" },
-        "Patrick Chao"
+        'div',
+        { id: 'logo' },
+        'Patrick Chao'
       )
     ),
     _react2.default.createElement(
-      "ul",
-      { className: "nav-buttons" },
+      'ul',
+      { className: 'nav-buttons' },
       _react2.default.createElement(
-        "li",
-        { className: "nav-button" },
+        'li',
+        { className: 'nav-button' },
         _react2.default.createElement(
-          "a",
-          { href: "./resume" },
-          "Resume"
+          'a',
+          { href: './PatrickChaoCV.pdf', target: '_blank' },
+          'Resume'
         )
       ),
       _react2.default.createElement(
-        "li",
-        { className: "nav-button" },
+        'li',
+        { className: 'nav-button' },
         _react2.default.createElement(
-          "a",
-          { href: "./projects" },
-          "Projects"
+          _reactRouterHashLink.HashLink,
+          { smooth: true, to: '#projects' },
+          'Projects'
         )
       ),
       _react2.default.createElement(
-        "li",
-        { className: "nav-button" },
+        'li',
+        { className: 'nav-button' },
         _react2.default.createElement(
-          "a",
-          { href: "https://github.com/Pchao93" },
-          _react2.default.createElement("i", { className: "fab fa-github" })
+          'a',
+          { href: 'https://github.com/Pchao93' },
+          _react2.default.createElement('i', { className: 'fab fa-github' })
         )
       ),
       _react2.default.createElement(
-        "li",
-        { className: "nav-button" },
+        'li',
+        { className: 'nav-button' },
         _react2.default.createElement(
-          "a",
-          { href: "https://linkedin.com/in/patrick-chao-560a0566/" },
-          _react2.default.createElement("i", { className: "fab fa-linkedin" })
+          'a',
+          { href: 'https://linkedin.com/in/patrickchao14/' },
+          _react2.default.createElement('i', { className: 'fab fa-linkedin' })
         )
       ),
       _react2.default.createElement(
-        "li",
-        { className: "nav-button" },
+        'li',
+        { className: 'nav-button' },
         _react2.default.createElement(
-          "a",
-          { href: "./contact" },
-          "Contact"
+          _reactRouterHashLink.HashLink,
+          { smooth: true, to: '#contact' },
+          'Contact'
         )
       )
     )
@@ -23551,7 +23553,7 @@ exports.default = function (props) {
           _react2.default.createElement(
             'span',
             null,
-            'Econ @ U.C. Berkeley'
+            'U.C. Berkeley'
           )
         ),
         _react2.default.createElement(
@@ -23639,22 +23641,6 @@ exports.default = function (props) {
         _react2.default.createElement(
           'li',
           { className: 'language' },
-          _react2.default.createElement('i', { className: 'devicon-java-plain colored' }),
-          _react2.default.createElement(
-            'span',
-            null,
-            'Java'
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'ul',
-        {
-
-          className: 'languages' },
-        _react2.default.createElement(
-          'li',
-          { className: 'language' },
           _react2.default.createElement('i', { className: 'devicon-html5-plain colored' }),
           _react2.default.createElement(
             'span',
@@ -23671,10 +23657,7 @@ exports.default = function (props) {
             null,
             'CSS'
           )
-        ),
-        _react2.default.createElement('li', { style: { width: "8vw" } }),
-        _react2.default.createElement('li', { style: { width: "8vw" } }),
-        _react2.default.createElement('li', { style: { width: "8vw" } })
+        )
       ),
       _react2.default.createElement(
         'div',
@@ -23687,7 +23670,7 @@ exports.default = function (props) {
         _react2.default.createElement(
           'li',
           { className: 'language' },
-          _react2.default.createElement('i', { 'class': 'devicon-rails-plain colored' }),
+          _react2.default.createElement('i', { className: 'devicon-rails-plain colored' }),
           _react2.default.createElement(
             'span',
             null,
@@ -23733,11 +23716,7 @@ exports.default = function (props) {
             null,
             'PostgreSQL'
           )
-        )
-      ),
-      _react2.default.createElement(
-        'ul',
-        { className: 'languages' },
+        ),
         _react2.default.createElement(
           'li',
           { className: 'language' },
@@ -23793,8 +23772,8 @@ exports.default = function (props) {
       ),
       _react2.default.createElement(
         'div',
-        { className: 'portfolio-header' },
-        'Portfolio'
+        { id: 'projects', className: 'portfolio-header' },
+        'Projects'
       ),
       _react2.default.createElement(
         'div',
@@ -23831,6 +23810,129 @@ exports.default = function (props) {
     )
   );
 };
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+exports.genericHashLink = genericHashLink;
+exports.HashLink = HashLink;
+exports.NavHashLink = NavHashLink;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(3);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactRouterDom = __webpack_require__(27);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var hashFragment = '';
+var observer = null;
+var asyncTimerId = null;
+var scrollFunction = null;
+
+function reset() {
+  hashFragment = '';
+  if (observer !== null) observer.disconnect();
+  if (asyncTimerId !== null) {
+    window.clearTimeout(asyncTimerId);
+    asyncTimerId = null;
+  }
+}
+
+function getElAndScroll() {
+  var element = document.getElementById(hashFragment);
+  if (element !== null) {
+    scrollFunction(element);
+    reset();
+    return true;
+  }
+  return false;
+}
+
+function hashLinkScroll() {
+  // Push onto callback queue so it runs after the DOM is updated
+  window.setTimeout(function () {
+    if (getElAndScroll() === false) {
+      if (observer === null) {
+        observer = new MutationObserver(getElAndScroll);
+      }
+      observer.observe(document, {
+        attributes: true,
+        childList: true,
+        subtree: true
+      });
+      // if the element doesn't show up in 10 seconds, stop checking
+      asyncTimerId = window.setTimeout(function () {
+        reset();
+      }, 10000);
+    }
+  }, 0);
+}
+
+function genericHashLink(props, As) {
+  function handleClick(e) {
+    reset();
+    if (props.onClick) props.onClick(e);
+    if (typeof props.to === 'string') {
+      hashFragment = props.to.split('#').slice(1).join('#');
+    } else if (_typeof(props.to) === 'object' && typeof props.to.hash === 'string') {
+      hashFragment = props.to.hash.replace('#', '');
+    }
+    if (hashFragment !== '') {
+      scrollFunction = props.scroll || function (el) {
+        return el.scrollIntoView(props.smooth ? { behavior: 'smooth' } : undefined);
+      };
+      hashLinkScroll();
+    }
+  }
+
+  var scroll = props.scroll,
+      smooth = props.smooth,
+      filteredProps = _objectWithoutProperties(props, ['scroll', 'smooth']);
+
+  return _react2.default.createElement(
+    As,
+    _extends({}, filteredProps, { onClick: handleClick }),
+    props.children
+  );
+}
+
+function HashLink(props) {
+  return genericHashLink(props, _reactRouterDom.Link);
+}
+
+function NavHashLink(props) {
+  return genericHashLink(props, _reactRouterDom.NavLink);
+}
+
+var propTypes = {
+  onClick: _propTypes2.default.func,
+  children: _propTypes2.default.node,
+  scroll: _propTypes2.default.func,
+  to: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object])
+};
+
+HashLink.propTypes = propTypes;
+NavHashLink.propTypes = propTypes;
 
 /***/ })
 /******/ ]);

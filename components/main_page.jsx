@@ -23,7 +23,7 @@ export default (props) => {
 
         </div>
         <div className='about-me-details'>
-          <div className="education"><span>Education: </span><span>Econ @ U.C. Berkeley</span></div>
+          <div className="education"><span>Education: </span><span>U.C. Berkeley</span></div>
           <div className="location"><span>Location: </span><span>SF Bay Area</span></div>
           <div className="work-authorization"><span>Status: </span><span>U.S. Citizen</span></div>
         </div>
@@ -47,14 +47,6 @@ export default (props) => {
               <span>Go</span>
             </li>
             <li className="language">
-              <i className="devicon-java-plain colored"></i>
-              <span>Java</span>
-            </li>
-          </ul>
-          <ul
-
-            className='languages'>
-            <li className="language">
               <i className="devicon-html5-plain colored"></i>
               <span>HTML</span>
             </li>
@@ -62,19 +54,14 @@ export default (props) => {
               <i className="devicon-css3-plain colored"></i>
               <span>CSS</span>
             </li>
-            <li style={{width: "8vw"}}>
-            </li>
-            <li style={{width: "8vw"}}>
-            </li>
-            <li style={{width: "8vw"}}>
-            </li>
+
 
 
           </ul>
           <div className='frameworks-header'>Frameworks/Technologies</div>
             <ul className='languages'>
               <li className="language">
-                <i class="devicon-rails-plain colored"></i>
+                <i className="devicon-rails-plain colored"></i>
                 <span>Rails</span>
               </li>
               <li className="language">
@@ -93,8 +80,6 @@ export default (props) => {
                 <i className="devicon-postgresql-plain colored"></i>
                 <span>PostgreSQL</span>
               </li>
-            </ul>
-            <ul className='languages'>
               <li className="language">
                 <i
 
@@ -118,7 +103,7 @@ export default (props) => {
                 <span>jQuery</span>
               </li>
             </ul>
-        <div className='portfolio-header'>Portfolio</div>
+        <div id="projects" className='portfolio-header'>Projects</div>
         <div className='portfolio-container'>
           <div className="portfolio-item">
             <div className='item-image'></div>

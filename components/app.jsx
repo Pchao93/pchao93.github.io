@@ -10,7 +10,7 @@ export default (props) => (
 
     <NavBar/>
     <Switch>
-      <Route exact path='/' component={MainPage}/>
+      <Route path='/' component={MainPage}/>
 
     </Switch>
 

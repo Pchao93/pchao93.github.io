@@ -12,6 +12,13 @@ body {
 	font-size: 12px;
 }
 
+@media screen and (max-width: 650px) {
+	body {
+		width: 100%;
+	}
+
+}
+
 /* button {
 	background-color: $light-blue;
 	border-color: $blue;

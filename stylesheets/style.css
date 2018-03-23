@@ -24,10 +24,13 @@ html {
   /* background: #36454f; */
 }
 
+
+
 #logo {
   font-size: 36px;
   color: #faf9fa;
   margin-left: 5vw;
+  width: 150px;
 
 }
 
@@ -55,6 +58,8 @@ html {
   height: 50px;
   box-sizing: border-box;
 }
+
+
 
 .main-page-container {
   margin-top: 50px;
@@ -101,6 +106,31 @@ html {
   overflow: hidden;
 }
 
+@media screen and (max-width: 650px) {
+  .nav-bar-container {
+    height: 100px;
+    display: block;
+  }
+
+  .nav-buttons {
+    margin-right: 0px;
+    margin-left: calc(5vw - 10px);
+    justify-content: flex-start;
+  }
+
+  .main-page-container {
+    margin-top: 100px;
+  }
+
+  .profile-image {
+    width: 50vw;
+    height: 50vw;
+    top: -25vw;
+    left: 25vw;
+
+  }
+}
+
 .actual-content {
 
   height: 100%;
@@ -116,7 +146,7 @@ html {
 }
 
 .about-me-header {
-  font-size: 3vw;
+  font-size: 40px;
   font-weight: 700;
   /* position: absolute; */
   /* top: -5vw; */
@@ -135,19 +165,21 @@ html {
   padding: 50px;
   padding-top: 0px;
   font-weight: 300;
-
+  font-size: 24px;
   font-family: "Open Sans", sans-serif;
 }
 
 .about-me-details {
   position: absolute;
   top: calc(8vw + 20px);
-  font-size: 1.5vw;
+  font-size: 20px;
   padding: 20px;
   margin-left: 20px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
   width: 18vw;
 }
+
+
 
 .about-me-details div {
   margin-bottom: 20px;
@@ -159,6 +191,33 @@ html {
 
 .about-me-details div:last-of-type {
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 650px) {
+  .about-me-header {
+    font-size: 30px;
+    margin-left: 0px;
+    padding: 0 10px;
+    margin-top: 30vw;
+
+  }
+
+  .about-me {
+    /* margin-top: calc(10vw + 180px); */
+    margin-left: 0px;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .about-me-details {
+    /* top: calc(30vw + 80px); */
+    margin: 5vw;
+    width: 80vw;
+    font-size: 24px;
+    position: relative;
+    margin-top: -10vw;
+    margin-bottom: 20vw;
+  }
 }
 
 
@@ -185,12 +244,17 @@ html {
 
 }
 
+
+
+
 .languages {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 3vw;
+  flex-wrap: wrap;
+
 
 }
 
@@ -213,7 +277,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
 }
 
 .language span {
@@ -231,6 +297,40 @@ html {
   margin-bottom: 2vw;
 }
 
+@media screen and (max-width: 650px) {
+  .technologies-header {
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .languages-header {
+    font-size: 24px;
+  }
+
+  .frameworks-header {
+    font-size: 24px;
+  }
+
+  .languages {
+
+
+  }
+
+  .languages i {
+    font-size: 75px;
+  }
+
+  .language {
+
+
+  }
+
+  .language span {
+    font-size: 16px;
+  }
+}
+
 .portfolio-header {
   font-size: 3vw;
   font-weight: 700;
@@ -241,5 +341,19 @@ html {
   font-weight: 700;
   border-bottom: 1px solid #000;
   padding-bottom: 1vw;
+
+}
+
+
+.portfolio-container {
+  
+}
+
+@media screen and (max-width: 650px) {
+  .portfolio-header {
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
 
 }
