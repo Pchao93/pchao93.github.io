@@ -23430,6 +23430,7 @@ var _reactRouterHashLink = __webpack_require__(79);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (props) {
+
   return _react2.default.createElement(
     'nav',
     { className: 'nav-bar-container' },
@@ -23449,9 +23450,18 @@ exports.default = function (props) {
         'li',
         { className: 'nav-button' },
         _react2.default.createElement(
-          'a',
-          { href: './PatrickChaoCV.pdf', target: '_blank' },
-          'Resume'
+          _reactRouterHashLink.HashLink,
+          { smooth: true, to: '#about' },
+          'About'
+        )
+      ),
+      _react2.default.createElement(
+        'li',
+        { className: 'nav-button' },
+        _react2.default.createElement(
+          _reactRouterHashLink.HashLink,
+          { smooth: true, to: '#skills' },
+          'Skills'
         )
       ),
       _react2.default.createElement(
@@ -23468,17 +23478,8 @@ exports.default = function (props) {
         { className: 'nav-button' },
         _react2.default.createElement(
           'a',
-          { href: 'https://github.com/Pchao93' },
-          _react2.default.createElement('i', { className: 'fab fa-github' })
-        )
-      ),
-      _react2.default.createElement(
-        'li',
-        { className: 'nav-button' },
-        _react2.default.createElement(
-          'a',
-          { href: 'https://linkedin.com/in/patrickchao14/' },
-          _react2.default.createElement('i', { className: 'fab fa-linkedin' })
+          { href: './PatrickChaoCV.pdf', target: '_blank' },
+          'Resume'
         )
       ),
       _react2.default.createElement(
@@ -23526,7 +23527,7 @@ exports.default = function (props) {
       { className: "actual-content" },
       _react2.default.createElement(
         "div",
-        { className: "profile-image" },
+        { id: "about", className: "profile-image" },
         _react2.default.createElement("img", { src: "https://media.licdn.com/dms/image/C5603AQFj_LB-8QHE2g/profile-displayphoto-shrink_200_200/0?e=1526079600&v=alpha&t=WUIl0-cKlE3MHo1wicrHQNAb_v-oY_JgNYk8NCdG_fs" })
       ),
       _react2.default.createElement(
@@ -23537,7 +23538,7 @@ exports.default = function (props) {
       _react2.default.createElement(
         "div",
         { className: "about-me" },
-        "Computer's have been a lifelong passion of mine, ever since I was putting together my first PCs with my dad. However, it wasn't until I took the introductory computer science courses at Cal that I discovered a passion for the software side of things. After several years in the legal industry after college, I decided to change careers and chase my dream of fulltime software development. Today, I work in a variety of languages and frameworks to produce fully featured web applications as a fullstack web developer."
+        "Computers have been a lifelong passion of mine, ever since I was putting together my first PCs with my dad. However, it wasn't until I took the introductory computer science courses at Cal that I discovered a passion for the software side of things. After several years in the legal industry after college, I decided to change careers and chase my dream of fulltime software development. Today, I work in a variety of languages and frameworks to produce fully featured web applications as a fullstack web developer."
       ),
       _react2.default.createElement(
         "div",
@@ -23588,7 +23589,7 @@ exports.default = function (props) {
       _react2.default.createElement(
         "div",
         { className: "technologies-header" },
-        "Technologies"
+        "Skills"
       ),
       _react2.default.createElement(
         "div",
@@ -23600,7 +23601,7 @@ exports.default = function (props) {
         { className: "languages" },
         _react2.default.createElement(
           "li",
-          { className: "language" },
+          { id: "skills", className: "language" },
           _react2.default.createElement("i", { className: "devicon-ruby-plain colored" }),
           _react2.default.createElement(
             "span",
@@ -23795,12 +23796,12 @@ exports.default = function (props) {
               { className: "project-links" },
               _react2.default.createElement(
                 "a",
-                { href: "https://www.goodplays.gg" },
+                { className: "live btn", href: "https://www.goodplays.gg" },
                 "Live"
               ),
               _react2.default.createElement(
                 "a",
-                { href: "https://github.com/Pchao93/goodPlays" },
+                { className: "live btn", href: "https://github.com/Pchao93/goodPlays" },
                 "Code"
               )
             )
@@ -23826,7 +23827,21 @@ exports.default = function (props) {
             _react2.default.createElement(
               "span",
               null,
-              "NBA play-by-play recap app built on vanilla JavaScript client and Express.js backend."
+              "Yelp for experiences - find date ideas, trip plans, and more! Built on React/Redux and Go, deployed with Docker."
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "project-links" },
+              _react2.default.createElement(
+                "a",
+                { className: "live btn", href: "https://www.goodplays.gg" },
+                "Live"
+              ),
+              _react2.default.createElement(
+                "a",
+                { className: "live btn", href: "https://github.com/Pchao93/goodPlays" },
+                "Code"
+              )
             )
           )
         ),
@@ -23840,7 +23855,21 @@ exports.default = function (props) {
             _react2.default.createElement(
               "span",
               null,
-              "Yelp for experiences - find date ideas, trip plans, and more! Built on React/Redux and Go, deployed with Docker."
+              "NBA play-by-play recap app built on vanilla JavaScript client and Express.js backend."
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "project-links" },
+              _react2.default.createElement(
+                "a",
+                { className: "live btn", href: "https://www.goodplays.gg" },
+                "Live"
+              ),
+              _react2.default.createElement(
+                "a",
+                { className: "live btn", href: "https://github.com/Pchao93/goodPlays" },
+                "Code"
+              )
             )
           ),
           _react2.default.createElement(
@@ -23853,8 +23882,102 @@ exports.default = function (props) {
       _react2.default.createElement(
         "div",
         { className: "contact-header" },
-        "Contact"
-      )
+        "Leave a Message"
+      ),
+      _react2.default.createElement(
+        "ul",
+        { className: "social-media" },
+        _react2.default.createElement(
+          "li",
+          { className: "contact-button" },
+          _react2.default.createElement("i", { "class": "far fa-envelope" }),
+          _react2.default.createElement(
+            "span",
+            null,
+            "Email"
+          ),
+          _react2.default.createElement(
+            "span",
+            null,
+            "patrick.chao.14@gmail.com"
+          )
+        ),
+        _react2.default.createElement(
+          "li",
+          { className: "contact-button" },
+          _react2.default.createElement("i", { "class": "fas fa-mobile" }),
+          _react2.default.createElement(
+            "span",
+            null,
+            "Phone"
+          ),
+          _react2.default.createElement(
+            "span",
+            null,
+            "(408) 931-5552"
+          )
+        ),
+        _react2.default.createElement(
+          "li",
+          { className: "contact-button icon" },
+          _react2.default.createElement(
+            "a",
+            { href: "https://github.com/Pchao93" },
+            _react2.default.createElement("i", { className: "fab fa-github" }),
+            _react2.default.createElement(
+              "span",
+              null,
+              "Github"
+            ),
+            _react2.default.createElement(
+              "span",
+              null,
+              "PChao93"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "li",
+          { className: "contact-button icon" },
+          _react2.default.createElement(
+            "a",
+            { href: "https://linkedin.com/in/patrickchao14/" },
+            _react2.default.createElement("i", { className: "fab fa-linkedin" }),
+            _react2.default.createElement(
+              "span",
+              null,
+              "LinkedIn"
+            ),
+            _react2.default.createElement(
+              "span",
+              null,
+              "patrickchao14"
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "form-container" },
+        _react2.default.createElement(
+          "div",
+          { className: "form-image" },
+          _react2.default.createElement("img", { src: "https://airows.com/.image/t_share/MTI5MDAwNTMwODMwNzkzMTgy/screen-shot-2014-08-25-at-120213-pm.png" })
+        ),
+        _react2.default.createElement(
+          "form",
+          { method: "POST", action: "https://formspree.io/patrick.chao.14@gmail.com", id: "contact", className: "form" },
+          _react2.default.createElement(
+            "div",
+            { className: "top-inputs" },
+            _react2.default.createElement("input", { placeholder: "Your Name", name: "name" }),
+            _react2.default.createElement("input", { placeholder: "Email Address", name: "email", type: "email" })
+          ),
+          _react2.default.createElement("textarea", { placeholder: "Write your message here...", name: "body" }),
+          _react2.default.createElement("input", { className: "submit-btn", type: "submit", value: "Send Message" })
+        )
+      ),
+      _react2.default.createElement("div", { className: "bottom-padding" })
     )
   );
 };
