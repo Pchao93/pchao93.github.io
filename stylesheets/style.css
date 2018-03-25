@@ -601,6 +601,10 @@ textarea {
     margin-bottom: 20px;
   }
 
+  textarea {
+    min-height: 200px;
+  }
+
 
 }
 
@@ -613,6 +617,7 @@ textarea {
   .contact-button {
     margin-bottom: 20px;
   }
+
 }
 
 .submit-btn {
