@@ -494,6 +494,12 @@ html {
   font-weight: 700;
   border-bottom: 1px solid #000;
   padding-bottom: 1vw;
+  position: relative;
+}
+
+.contact-header a {
+  position: absolute;
+  top: 350px;
 }
 
 .social-media {
@@ -599,6 +605,10 @@ textarea {
     font-size: 30px;
     padding-bottom: 10px;
     margin-bottom: 20px;
+  }
+
+  .contact-header a {
+    top: 225px;
   }
 
   textarea {

@@ -23477,18 +23477,18 @@ exports.default = function (props) {
         'li',
         { className: 'nav-button' },
         _react2.default.createElement(
-          'a',
-          { href: './PatrickChaoCV.pdf', target: '_blank' },
-          'Resume'
+          _reactRouterHashLink.HashLink,
+          { smooth: true, to: '#contact' },
+          'Contact'
         )
       ),
       _react2.default.createElement(
         'li',
         { className: 'nav-button' },
         _react2.default.createElement(
-          _reactRouterHashLink.HashLink,
-          { smooth: true, to: '#contact' },
-          'Contact'
+          'a',
+          { href: './PatrickChaoCV.pdf', target: '_blank' },
+          'Resume'
         )
       )
     )
@@ -23882,7 +23882,8 @@ exports.default = function (props) {
       _react2.default.createElement(
         "div",
         { className: "contact-header" },
-        "Leave a Message"
+        "Leave a Message ",
+        _react2.default.createElement("a", { id: "contact" })
       ),
       _react2.default.createElement(
         "ul",
@@ -23932,7 +23933,7 @@ exports.default = function (props) {
             _react2.default.createElement(
               "span",
               null,
-              "PChao93"
+              "Pchao93"
             )
           )
         ),
@@ -23966,7 +23967,7 @@ exports.default = function (props) {
         ),
         _react2.default.createElement(
           "form",
-          { method: "POST", action: "https://formspree.io/patrick.chao.14@gmail.com", id: "contact", className: "form" },
+          { method: "POST", action: "https://formspree.io/patrick.chao.14@gmail.com", className: "form" },
           _react2.default.createElement(
             "div",
             { className: "top-inputs" },

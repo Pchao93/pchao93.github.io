@@ -155,7 +155,7 @@ export default (props) => {
           </div>
 
         </div>
-        <div className='contact-header'>Leave a Message</div>
+        <div className='contact-header'>Leave a Message <a id="contact"></a></div>
         <ul className='social-media'>
           <li className="contact-button">
             <i class="far fa-envelope"></i>
@@ -171,7 +171,7 @@ export default (props) => {
             <a href="https://github.com/Pchao93">
               <i className="fab fa-github"></i>
               <span>Github</span>
-              <span>PChao93</span>
+              <span>Pchao93</span>
             </a>
           </li>
           <li className="contact-button icon">
@@ -182,11 +182,12 @@ export default (props) => {
           </a>
           </li>
         </ul>
+
         <div className='form-container'>
           <div className="form-image">
             <img src="https://airows.com/.image/t_share/MTI5MDAwNTMwODMwNzkzMTgy/screen-shot-2014-08-25-at-120213-pm.png"></img>
           </div>
-          <form method="POST" action="https://formspree.io/patrick.chao.14@gmail.com"id="contact" className="form">
+          <form method="POST" action="https://formspree.io/patrick.chao.14@gmail.com" className="form">
             <div className="top-inputs">
               <input placeholder="Your Name" name="name"></input>
               <input placeholder="Email Address" name="email" type="email" ></input>

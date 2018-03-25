@@ -23,10 +23,10 @@ export default (props) => {
             <Link smooth to="#projects">Projects</Link>
           </li>
           <li className="nav-button">
-            <a href="./PatrickChaoCV.pdf" target="_blank">Resume</a>
+            <Link smooth to="#contact">Contact</Link>
           </li>
           <li className="nav-button">
-            <Link smooth to="#contact">Contact</Link>
+            <a href="./PatrickChaoCV.pdf" target="_blank">Resume</a>
           </li>
         </ul>
     </nav>
