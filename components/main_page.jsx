@@ -15,7 +15,7 @@ export default (props) => {
         <div className='about-me-header'>Patrick Chao - Software Developer</div>
 
         <div className="about-me">
-          Computers have been a lifelong passion of mine, ever since I was putting together my first PCs with my dad.
+          Computers have been a lifelong passion of mine, ever since I was putting together my first PCs with my dad as a small child.
           However, it wasn't until I took the introductory computer science courses at Cal that I discovered a passion for the software side of things.
           After several years in the legal industry after college, I decided to change careers and chase my dream of fulltime software development.
           Today, I work in a variety of languages and frameworks to produce fully featured web applications as a fullstack web developer.
