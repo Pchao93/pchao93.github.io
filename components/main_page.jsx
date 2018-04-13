@@ -24,7 +24,7 @@ export default (props) => {
         </div>
         <div className='about-me-details'>
           <div className="education"><span>Education: </span><span>U.C. Berkeley</span></div>
-          <div className="location"><span>Location: </span><span>SF Bay Area</span></div>
+          <div className="location"><span>Location: </span><span>San Francisco</span></div>
           <div className="work-authorization"><span>Status: </span><span>U.S. Citizen</span></div>
         </div>
         <div  className='technologies-header'>Skills</div>
