@@ -192,7 +192,7 @@ export default (props) => {
               <input placeholder="Your Name" name="name"></input>
               <input placeholder="Email Address" name="email" type="email" ></input>
             </div>
-            <textarea placeholder="Write your message here..." name="body"></textarea>
+            <textarea placeholder="What would you like to build together?" name="body"></textarea>
             <input className="submit-btn" type="submit" value="Send Message"></input>
           </form>
         </div>
