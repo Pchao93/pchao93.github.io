@@ -10,7 +10,7 @@ export default (props) => {
       </header>
       <div className="actual-content">
         <div id="about" className='profile-image'>
-          <img src="https://media.licdn.com/dms/image/C5603AQFj_LB-8QHE2g/profile-displayphoto-shrink_200_200/0?e=1526079600&v=alpha&t=WUIl0-cKlE3MHo1wicrHQNAb_v-oY_JgNYk8NCdG_fs"></img>
+          <img src="https://media.licdn.com/dms/image/C5603AQFj_LB-8QHE2g/profile-displayphoto-shrink_200_200/0?e=1532563200&v=beta&t=Xl5IvxlToLZLK9-iDr8SrA7y-rrxhNyghAcOT4du520"></img>
         </div>
         <div className='about-me-header'>Patrick Chao - Software Developer</div>
 
