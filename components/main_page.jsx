@@ -143,7 +143,7 @@ export default (props) => {
                 <span>NBA play-by-play recap app built on vanilla JavaScript client and Express.js backend.</span>
 
                 <div className="project-links">
-                  <a className='live btn' href="https://prettypbp.herokuapp.com">Live</a>
+                  <a className='live btn' href="https://pretty-pbp.herokuapp.com">Live</a>
                   <a className='live btn' href="https://github.com/Pchao93/PrettyPbP">Code</a>
                 </div>
             </div>
