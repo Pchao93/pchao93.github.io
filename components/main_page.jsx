@@ -132,8 +132,7 @@ export default (props) => {
                 <span>Yelp for experiences - find date ideas, trip plans, and more! Built on React/Redux and Go, deployed with Docker.</span>
 
                 <div className="project-links">
-                  <a className='live btn' href="https://www.goodplays.gg">Live</a>
-                  <a className='live btn' href="https://github.com/Pchao93/goodPlays">Code</a>
+                  <a className='live btn' href="https://github.com/TWSummer/Experience">Code</a>
                 </div>
             </div>
 
@@ -144,8 +143,8 @@ export default (props) => {
                 <span>NBA play-by-play recap app built on vanilla JavaScript client and Express.js backend.</span>
 
                 <div className="project-links">
-                  <a className='live btn' href="https://www.goodplays.gg">Live</a>
-                  <a className='live btn' href="https://github.com/Pchao93/goodPlays">Code</a>
+                  <a className='live btn' href="https://prettypbp.herokuapp.com">Live</a>
+                  <a className='live btn' href="https://github.com/Pchao93/PrettyPbP">Code</a>
                 </div>
             </div>
             <div className='item-image'>
