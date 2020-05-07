@@ -10,7 +10,7 @@ export default (props) => {
       </header>
       <div className="actual-content">
         <div id="about" className='profile-image'>
-          <img src="https://imgur.com/ECwj5W6"></img>
+          <img src="https://i.imgur.com/ECwj5W6.jpg"></img>
         </div>
         <div className='about-me-header'>Patrick Chao - Software Developer</div>
 
